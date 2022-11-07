@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+<servlet>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.neiza.RedFox.Controller.LoginAction</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>POSAction</servlet-name>
+    <servlet-class>com.neiza.RedFox.Controller.POSAction</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>ShowAction</servlet-name>
+    <servlet-class>com.neiza.RedFox.Controller.ShowAction</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>MovieAction</servlet-name>
+    <servlet-class>com.neiza.RedFox.Controller.MovieAction</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>SiteAction</servlet-name>
+    <servlet-class>com.neiza.RedFox.Controller.SiteAction</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>POSAction</servlet-name>
+    <url-pattern>/POSAction</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>ShowAction</servlet-name>
+    <url-pattern>/ShowAction</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>MovieAction</servlet-name>
+    <url-pattern>/MovieAction</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>SiteAction</servlet-name>
+    <url-pattern>/SiteAction</url-pattern>
+</servlet-mapping>
+<session-config>
+    <session-timeout>
+        30
+    </session-timeout>
+</session-config>
+</web-app>
