@@ -1,15 +1,17 @@
 package com.neiza.RedFox.Controller;
 
 import com.neiza.RedFox.Model.Bean.SiteBean;
-import com.neiza.RedFox.Model.DAO.AdminModel;
+import com.neiza.RedFox.Model.DAO.oldDAO.AdminModel;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebServlet(name = "siteAction", value = "/siteAction")
 public class SiteAction extends HttpServlet {
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

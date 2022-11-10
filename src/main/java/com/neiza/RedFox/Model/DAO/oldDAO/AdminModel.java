@@ -1,4 +1,4 @@
-package com.neiza.RedFox.Model.DAO;
+package com.neiza.RedFox.Model.DAO.oldDAO;
 
 import com.neiza.RedFox.Model.Bean.*;
 
@@ -11,7 +11,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 public class AdminModel {
-
     /* Todo: For Login on POS & Admin [selectAdminData & selectPosData]*/
     public int selectAdminData(AdminBean ad) {
         int status = 0;

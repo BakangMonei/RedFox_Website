@@ -63,7 +63,7 @@
                     <input class="input100" type="password" name="password" placeholder="Type your password">
                     <span class="focus-input100" data-symbol="&#xf190;"></span>
                 </div>
-                <div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
                     <span class="label-input100">City</span>
                     <input class="input100" type="text" name="city" placeholder="Type your City">
                     <span class="focus-input100" data-symbol="&#xf206;"></span>

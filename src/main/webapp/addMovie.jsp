@@ -52,7 +52,7 @@
 <div id="login-box">
     <div class="left">
         <h1>Add Movie</h1>
-        <form action="MovieAction" enctype="multipart/form-data">
+        <form action="movieAction" enctype="multipart/form-data">
             <input type="text" name="moviename" placeholder="MovieName" />
             <input type="text" name="caste" placeholder="MovieCast" />
             <input type="text" name="genre" placeholder="MovieGenre" />

@@ -1,15 +1,18 @@
 package com.neiza.RedFox.Controller;
 
 import com.neiza.RedFox.Model.Bean.AdminBean;
-import com.neiza.RedFox.Model.DAO.AdminModel;
+import com.neiza.RedFox.Model.DAO.oldDAO.AdminModel;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
+@WebServlet(name = "loginAction", value = "/loginAction")
 public class LoginAction extends HttpServlet {
 
     /**
@@ -37,7 +40,7 @@ public class LoginAction extends HttpServlet {
             String role = request.getParameter("role");
             int status = 0;
             if(role.equals("admin")) {
-                AdminBean ad=new AdminBean();
+                AdminBean ad = new AdminBean();
                 ad.setUserid(userid);
                 ad.setPassword(password);
                 ad.setRole(role);

@@ -37,7 +37,7 @@
     st=con.createStatement();
     rs = st.executeQuery(sql);
 %>
-<form action="SeatLayout.jsp">
+<form action="seatLayout.jsp">
     <div class="container">
         <div id="login-box">
             <div class="left">

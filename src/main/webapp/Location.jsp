@@ -17,7 +17,7 @@
 <div id="login-box">
   <div class="left">
     <h1>Enter Site:</h1>
-    <form action="MovieSelection.jsp" enctype="multipart/form-data">
+    <form action="movieSelection.jsp" enctype="multipart/form-data">
       <input type="submit" class="checkout-button" value="New Delhi"/>
       <input type="submit" class="checkout-button" value="Indore"/>
       <input type="submit" class="checkout-button" value="Bhopal"/>

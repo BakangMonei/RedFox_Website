@@ -18,24 +18,6 @@ public class POSAction extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException , SQLException {
 
-        /*response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            RequestDispatcher rd = null;
-            response.setContentType("text/html;charset=UTF-8");
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>POS LoginAction</title>");
-            out.println("</head>");
-            out.println("<body>");*/
-            //int id=new AdminModel().addPOS(ad1);
-            //if(id > 0) {
-                //out.println("<b>Your POS User ID IS" + " " + id + "</b>");
-                /*rd = request.getRequestDispatcher("index.html");
-                rd.include(request, response);
-            //}
-            //out.println("</body>");
-            //out.println("</html>");*/
         }
 
     @Override

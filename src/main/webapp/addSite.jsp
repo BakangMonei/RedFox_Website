@@ -17,7 +17,7 @@
 <div id="login-box">
     <div class="left">
         <h1>Add Site</h1>
-        <form action="SiteAction">
+        <form action="siteAction">
             <input type="SiteLocation" name="sitelocation" placeholder="SiteLocation" />
             <input type="submit" value="Add" />
     </div>

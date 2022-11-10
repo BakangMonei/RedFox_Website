@@ -1,15 +1,17 @@
 package com.neiza.RedFox.Controller;
 
 import com.neiza.RedFox.Model.Bean.ShowBean;
-import com.neiza.RedFox.Model.DAO.AdminModel;
+import com.neiza.RedFox.Model.DAO.oldDAO.AdminModel;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebServlet(name = "showAction", value = "/showAction")
 public class ShowAction extends HttpServlet {
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

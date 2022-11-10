@@ -53,7 +53,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
                     <span class="label-input100">User ID</span>
                     <input class="input100" type="text" name="userid" placeholder="Type your username">
                     <span class="focus-input100" data-symbol="&#xf206;"></span>

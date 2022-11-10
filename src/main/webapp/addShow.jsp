@@ -18,7 +18,7 @@
 <div id="login-box">
     <div class="left">
         <h1>Add Show</h1>
-        <form action="ShowAction" enctype="multipart/form-data">
+        <form action="showAction" enctype="multipart/form-data">
             <input type="time" name="starttime" placeholder="Enter Show Start Time" />
             <input type="time" name="endtime" placeholder="Enter Show End Time" />
             <input type="text" name="price" placeholder="Show Price" />
