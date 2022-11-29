@@ -40,7 +40,8 @@
 <div class="limiter">
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-            <form action="LoginAction">
+<%--            --%>
+            <form action="LoginAction" method="post">
 					<span class="login100-form-title p-b-49">
 						Login
 					</span>
@@ -71,7 +72,7 @@
                 <div class="container-login100-form-btn">
                     <div class="wrap-login100-form-btn">
                         <div class="login100-form-bgbtn"></div>
-                        <button class="login100-form-btn">
+                        <button class="login100-form-btn" type="submit">
                             Login
                         </button>
                     </div>

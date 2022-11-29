@@ -1,9 +1,6 @@
 package com.neiza.RedFox.Model.DAO;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class SubscriberDAO {
     //
@@ -18,5 +15,23 @@ public class SubscriberDAO {
         enterSubscriberDetails.setString(4, city);
         enterSubscriberDetails.executeUpdate();
         enterSubscriberDetails.close();
+    }
+    public ResultSet verifyAdmin(String username, String password) throws SQLException {
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/redfox", "root", "MoneiBakang@959115515");
+        PreparedStatement pst = connection.prepareStatement("select * from admin where userid = ? and password = ?");
+        pst.setString(1, username);
+        pst.setString(2, password);
+        ResultSet resultSet = pst.executeQuery();
+        return resultSet;
+    }
+    public ResultSet verifyUser(String username, String password) throws SQLException {
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/redfox", "root", "MoneiBakang@959115515");
+        PreparedStatement pst = connection.prepareStatement("select * from pos where username = ? and password = ?");
+        pst.setString(1, username);
+        pst.setString(2, password);
+
+        ResultSet resultSet = pst.executeQuery();
+
+        return resultSet;
     }
 }
